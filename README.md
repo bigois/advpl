@@ -1,2 +1,2 @@
 # ADVPL
-Repositório para armazenagem de código .prw durante aprendizagem
+Repositório para armazenagem de código .prw durante aprendizagem.
