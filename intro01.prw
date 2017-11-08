@@ -31,9 +31,14 @@ Else
 	alert('NOME INCORRETO')
 Endif
 
+// 9) LAÇO DE REPETIÇÃO
+for n := 1 to 10
+	alert(n)
+next
+
 // SAÍDA DE INFORMAÇÕES (SEMELHANTE AO JOPTIONPANE.SHOWMESSAGEDIALOG())
-MsgAlert("Hello World!)
-MsgAlert("Multilinha"+;
+alert("Hello World!)
+alert("Multilinha"+;
 	 " com ponto e vírgula!")	
 
 /* OPERADORES DE COMPARAÇÃO SÃO ESCRITOS POR EXTENSO,
