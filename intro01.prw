@@ -34,7 +34,7 @@ Endif
 // SAÍDA DE INFORMAÇÕES (SEMELHANTE AO JOPTIONPANE.SHOWMESSAGEDIALOG())
 MsgAlert("Hello World!)
 MsgAlert("Multilinha"+;
-	 "com ponto e vírgula!")	
+	 " com ponto e vírgula!")	
 
 /* OPERADORES DE COMPARAÇÃO SÃO ESCRITOS POR EXTENSO,
 COM EXCESSÃO DE DIFERENÇA "!=" */
