@@ -1,0 +1,53 @@
+ADVPL01) TIPOS DE VARIÁVEIS
+	• Númerico: 	nDia		:= 21
+	• Booleano:		lVerdade	:= .T.
+	• Caractere:	cTexto		:= "Bernardo"
+	• Data: 		dData		:= ctod("21/08/15"
+	• Array:		aLista		:= {1, 2, 3}
+	• Matriz:		aMatriz		:= {{1, 2, 3}, {4, 5, 6}}
+	• Randômica:	xVariavel	:= "QUALQUER COISA"
+	• Randômica:	xVariavel	:= nil
+	• Randômica:	xVariavel	:= {{1, 2, 3}, {4, 5, 6}}
+	
+ADVPL02) ESCOPO DE VARIÁVEIS
+	• Local:		local nDia
+	• Público:		public _lVerdade
+	• Privado:		private _cTexto
+	• Estático: 	static dData
+	
+ADVPL03) SAÍDA POR ALERT() E CONCATENAÇÃO
+	• CARACTERE
+		xVariavel := "Texto"
+		alert("VALOR: " + xVariavel)	  
+	• NÚMERICO
+		xVariavel := 22
+		alert("VALOR: " + cValToChar(xVariavel))
+	• LÓGICO
+		xVariavel := .T.
+		alert("VALOR: " + cValToChar(xVariavel))
+	• DATE
+		xVariavel := date()
+		alert("VALOR: " + dToC(xVariavel))
+	• NULO
+		xVariavel := nil
+	  	alert("VALOR: " + xVariavel)
+
+ADVPL04) ESTRUTURA CONDICIONAL IF, ELSE, ELSEIF
+	• SE
+		if xVariavel == 1
+			alert("LAÇO 1")
+		endIf
+	• SE, SENÃO
+		if xVariavel == 1
+			alert("LAÇO 1")
+		else
+			alert("LAÇO 2")
+		endIf
+	• SE, SENÃO SE, SENÃO
+		if xVariavel == 1
+			alert("LAÇO 1")
+		elseIf  xVariavel == 2
+			alert("LAÇO 2")
+		else
+			alert("LAÇO 3")
+		endIf
