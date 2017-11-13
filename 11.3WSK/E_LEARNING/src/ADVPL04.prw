@@ -1,3 +1,11 @@
+/*
++======================================+
+| PROGRAMA:		Estrutura de laços 	   |
+| AUTOR:		Guilherme Bigois	   |
+| DATA:			13 de novembro de 2017 |
++======================================+
+*/
+
 #include 'protheus.ch'
 #include 'parmtype.ch'
 
@@ -12,7 +20,7 @@ user function ADVPL04()
 	else
 		alert("LAÇO 2")
 		xVariavel++
- 	endIf
+	endIf
 	if xVariavel == 1
 		alert("LAÇO 1")
 	elseIf  xVariavel == 2
