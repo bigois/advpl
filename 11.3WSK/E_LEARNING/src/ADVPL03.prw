@@ -6,19 +6,19 @@
 +==========================================+
 */
 
-#include 'protheus.ch'
-#include 'parmtype.ch'
+#INCLUDE 'protheus.ch'
+#INCLUDE 'parmtype.ch'
 
-user function ADVPL03()
-	local xVariavel
+USER FUNCTION ADVPL03()
+	LOCAL xVariavel
 	xVariavel := "Texto"
-	alert("VALOR: " + xVariavel)
+	ALERT("VALOR: " + xVariavel)
 	xVariavel := 22
-	alert("VALOR: " + cValToChar(xVariavel))
+	ALERT("VALOR: " + CVALTOCHAR(xVariavel))
 	xVariavel := .T.
-	alert("VALOR: " + cValToChar(xVariavel))
-	xVariavel := date()
-	alert("VALOR: " + dToC(xVariavel))
-	xVariavel := nil
-	alert("VALOR: " + xVariavel)
-return
+	ALERT("VALOR: " + CVALTOCHAR(xVariavel))
+	xVariavel := DATE()
+	ALERT("VALOR: " + DTOC(xVariavel))
+	xVariavel := NIL
+	ALERT("VALOR: " + xVariavel)
+RETURN

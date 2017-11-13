@@ -6,12 +6,12 @@
 +======================================+
 */
 
-#include 'protheus.ch'
-#include 'parmtype.ch'
+#INCLUDE 'protheus.ch'
+#INCLUDE 'parmtype.ch'
 
-user function ADVPL02()
-	local lVerdade
-	private _aData
-	public _lVerdade
-	static aMatriz
-return
+USER FUNCTION ADVPL02()
+	LOCAL lVerdade
+	PRIVATE _aData
+	PUBLIC _lVerdade
+	STATIC aMatriz
+RETURN

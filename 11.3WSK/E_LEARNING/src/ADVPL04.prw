@@ -6,27 +6,26 @@
 +======================================+
 */
 
-#include 'protheus.ch'
-#include 'parmtype.ch'
+#INCLUDE 'protheus.ch'
+#INCLUDE 'parmtype.ch'
 
-user function ADVPL04()
-	local xVariavel := 1
-	if xVariavel == 1
-		alert("LAÇO 1")
+USER FUNCTION ADVPL04()
+	LOCAL xVariavel := 1
+	IF xVariavel == 1
+		ALERT("LAÇO 1")
 		xVariavel++
-	endIf
-	if xVariavel == 1
-		alert("LAÇO 1")
-	else
-		alert("LAÇO 2")
+	ENDIF
+	IF xVariavel == 1
+		ALERT("LAÇO 1")
+	ELSE
+		ALERT("LAÇO 2")
 		xVariavel++
-	endIf
-	if xVariavel == 1
-		alert("LAÇO 1")
-	elseIf  xVariavel == 2
-		alert("LAÇO 2")
-	else
-		alert("LAÇO 3")
-	endIf
-
-return
+	ENDIF
+	IF xVariavel == 1
+		ALERT("LAÇO 1")
+	ELSEIF  xVariavel == 2
+		ALERT("LAÇO 2")
+	ELSE
+		ALERT("LAÇO 3")
+	ENDIF
+RETURN

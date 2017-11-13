@@ -6,24 +6,24 @@
 +======================================================+
 */
 
-#include 'protheus.ch'
-#include 'parmtype.ch'
+#INCLUDE 'protheus.ch'
+#INCLUDE 'parmtype.ch'
 
-user function ADVPL06()
-	local nNum1 := 2
-	local nNum2 := 21
-	local nNum3 := 17
-	alert("nNum1(" + cValToChar(nNum1) + ") := nNum3(" + cValToChar(nNum3) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 := nNum3))
-	alert("nNum1(" + cValToChar(nNum1) + ") += nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 += nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") -= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 -= nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") *= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 *= nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") /= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 /= nNum2))
-	// [ERRO DESCONHECIDO] alert("nNum1(" + cValToChar(nNum1) + ") ^= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 ^= nNum2))
-	// [ERRO DESCONHECIDO] alert("nNum1(" + cValToChar(nNum1) + ") %= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 %= nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") + nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 + nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") - nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 - nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") * nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 * nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") / nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 / nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") ^ nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 ^ nNum2))
-	alert("nNum1(" + cValToChar(nNum1) + ") % nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 % nNum2))
-return
+USER FUNCTION ADVPL06()
+	LOCAL nNum1 := 2
+	LOCAL nNum2 := 21
+	LOCAL nNum3 := 17
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") := nNum3(" + CVALTOCHAR(nNum3) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 := nNum3))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") += nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 += nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") -= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 -= nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") *= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 *= nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") /= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 /= nNum2))
+	// [ERRO DESCONHECIDO] ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") ^= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 ^= nNum2))
+	// [ERRO DESCONHECIDO] ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") %= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 %= nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") + nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 + nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") - nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 - nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") * nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 * nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") / nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 / nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") ^ nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 ^ nNum2))
+	ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") % nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 % nNum2))
+RETURN

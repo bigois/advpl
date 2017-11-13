@@ -10,123 +10,184 @@ ADVPL01) TIPOS DE VARIÁVEIS
 	• Randômica:	xVariavel	:= {{1, 2, 3}, {4, 5, 6}}
 	
 ADVPL02) ESCOPO DE VARIÁVEIS
-	• Local:		local nDia			(exclusiva da função, não acessada pela filha)
-	• Público:		public _lVerdade	(roda até o fim da thread, existe após o fim do pai)
-	• Privado:		private _cTexto		(roda até o fim do pai, acessada pela filha)
-	• Estático: 	static dData		(exclusiva do pai e funções dele)
+	• Local:		LOCAL nDia			(exclusiva da função, não acessada pela filha)
+	• Público:		PUBLIC _lVerdade	(roda até o fim da thread, existe após o fim do pai)
+	• Privado:		PRIVATE _cTexto		(roda até o fim do pai, acessada pela filha)
+	• Estático: 	STATIC dData		(exclusiva do pai e funções dele)
 	
 ADVPL03) SAÍDA POR ALERT() E CONCATENAÇÃO
 	• CARACTERE
 		xVariavel := "Texto"
-		alert("VALOR: " + xVariavel)	  
+		ALERT("VALOR: " + xVariavel)	  
 	• NÚMERICO
 		xVariavel := 22
-		alert("VALOR: " + cValToChar(xVariavel))
+		ALERT("VALOR: " + CVALTOCHAR(xVariavel))
 	• LÓGICO
 		xVariavel := .T.
-		alert("VALOR: " + cValToChar(xVariavel))
+		ALERT("VALOR: " + CVALTOCHAR(xVariavel))
 	• DATE
 		xVariavel := date()
-		alert("VALOR: " + dToC(xVariavel))
+		ALERT("VALOR: " + DTOC(xVariavel))
 	• NULO
 		xVariavel := nil
-	  	alert("VALOR: " + xVariavel)
+	  	ALERT("VALOR: " + xVariavel)
 
 ADVPL04) ESTRUTURA CONDICIONAL IF, ELSE, ELSEIF
 	• SE
-		if xVariavel == 1
-			alert("LAÇO 1")
-		endIf
+		IF xVariavel == 1
+			ALERT("LAÇO 1")
+		ENDIF
 	• SE, SENÃO
-		if xVariavel == 1
-			alert("LAÇO 1")
-		else
-			alert("LAÇO 2")
-		endIf
+		IF xVariavel == 1
+			ALERT("LAÇO 1")
+		ELSE
+			ALERT("LAÇO 2")
+		ENDIF
 	• SE, SENÃO SE, SENÃO
-		if xVariavel == 1
-			alert("LAÇO 1")
-		elseIf  xVariavel == 2
-			alert("LAÇO 2")
-		else
-			alert("LAÇO 3")
-		endIf
+		IF xVariavel == 1
+			ALERT("LAÇO 1")
+		ELSEIF  xVariavel == 2
+			ALERT("LAÇO 2")
+		ELSE
+			ALERT("LAÇO 3")
+		ENDIF
 		
 ADVPL05) OPERADORES DE STRING E RELACIONAIS
 	• CONCATEÇÃO SEM ESPAÇOS FINAIS 
 		cNome := "Bernardo Caethano "
 		cSobrenome := " Bigois"
-		alert(cNome - cSobrenome)
+		ALERT(cNome - cSobrenome)
 	• CONCATEÇÃO SIMPLES	
 		cNome := "Bernardo Caethano "
 		cSobrenome := " Bigois"
-		alert(cNome + cSobrenome)
+		ALERT(cNome + cSobrenome)
 	• COMPARAÇÃO DE STRING
 		cNome := "Bernardo Caethano "
 		cSobrenome := "Bigois"
 		cSobrenomeTeste := "Bigois"
-		alert(cNome + " = " + cSobrenome + " = " + cValToChar(cNome $ cSobrenome))
+		ALERT(cNome + " = " + cSobrenome + " = " + CVALTOCHAR(cNome $ cSobrenome))
 	• COMPARAÇÃO DE IGUALDADE DE STRING
-		alert(cSobrenomeTeste + " = " + cSobrenome + " = " + cValToChar(cSobrenomeTeste $ cSobrenome))
-		alert(cSobrenomeTeste + " = " + cSobrenome + " = " + cValToChar(cSobrenomeTeste == cSobrenome))
+		ALERT(cSobrenomeTeste + " = " + cSobrenome + " = " + CVALTOCHAR(cSobrenomeTeste $ cSobrenome))
+		ALERT(cSobrenomeTeste + " = " + cSobrenome + " = " + CVALTOCHAR(cSobrenomeTeste == cSobrenome))
 	• COMPARAÇÃO DE MAIOR
-		alert(cValToChar(nNum1) + " > " + cValToChar(nNum2) + " = " + cValToChar(nNum1 > nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " > " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 > nNum2))
 	• COMPARAÇÃO DE MENOR
-		alert(cValToChar(nNum1) + " < " + cValToChar(nNum2) + " = " + cValToChar(nNum1 < nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " < " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 < nNum2))
 	• COMPARAÇÃO DE IGUALDADE
-		alert(cValToChar(nNum1) + " = " + cValToChar(nNum2) + " = " + cValToChar(nNum1 = nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " = " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 = nNum2))
 	• COMPARAÇÃO DE DIFERENÇA
-		alert(cValToChar(nNum1) + " != " + cValToChar(nNum2) + " = " + cValToChar(nNum1 != nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " != " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 != nNum2))
 	• COMPARAÇÃO DE MENOR OU IGUAL
-		alert(cValToChar(nNum1) + " <= " + cValToChar(nNum2) + " = " + cValToChar(nNum1 <= nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " <= " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 <= nNum2))
 	• COMPARAÇÃO DE MAIOR OU IGUAL
-		alert(cValToChar(nNum1) + " >= " + cValToChar(nNum2) + " = " + cValToChar(nNum1 >= nNum2))
+		ALERT(CVALTOCHAR(nNum1) + " >= " + CVALTOCHAR(nNum2) + " = " + CVALTOCHAR(nNum1 >= nNum2))
 		
 ADVPL06) OPERADORES ARITMÉTICOS E DE ATRIBUIÇÃO
 	• ATRIBUIÇÃO SIMPLES
-		alert("nNum1(" + cValToChar(nNum1) + ") := nNum3(" + cValToChar(nNum3) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 := nNum3))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") := nNum3(" + CVALTOCHAR(nNum3) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 := nNum3))
 	• ADIÇÃO E ATRIBUIÇÃO EM LINHA
-		alert("nNum1(" + cValToChar(nNum1) + ") += nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 += nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") += nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 += nNum2))
 	• SUBTRAÇÃO E ATRIBUIÇÃO EM LINHA
-		alert("nNum1(" + cValToChar(nNum1) + ") -= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 -= nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") -= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 -= nNum2))
 	• MULTIPLICAÇÃO E ATRIBUIÇÃO EM LINHA
-		alert("nNum1(" + cValToChar(nNum1) + ") *= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 *= nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") *= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 *= nNum2))
 	• DIVISÃO E ATRIBUIÇÃO EM LINHA
-		alert("nNum1(" + cValToChar(nNum1) + ") /= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 /= nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") /= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 /= nNum2))
 	• EXPONENCIAÇÃO E ATRIBUIÇÃO EM LINHA	
-		alert("nNum1(" + cValToChar(nNum1) + ") ^= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 ^= nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") ^= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 ^= nNum2))
 	• MODULAÇÃO E ATRIBUIÇÃO EM LINHA
-		alert("nNum1(" + cValToChar(nNum1) + ") %= nNum2(" + cValToChar(nNum2) + ") | RESULTADO: nNum1 = " + cValToChar(nNum1 %= nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") %= nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: nNum1 = " + CVALTOCHAR(nNum1 %= nNum2))
 	• SOMA
-		alert("nNum1(" + cValToChar(nNum1) + ") + nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 + nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") + nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 + nNum2))
 	• SUBTRAÇÃO
-		alert("nNum1(" + cValToChar(nNum1) + ") - nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 - nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") - nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 - nNum2))
 	• MULTIPLCAÇÃO
-		alert("nNum1(" + cValToChar(nNum1) + ") * nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 * nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") * nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 * nNum2))
 	• DIVISÃO
-		alert("nNum1(" + cValToChar(nNum1) + ") / nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 / nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") / nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 / nNum2))
 	• EXPONENCIAÇÃO
-		alert("nNum1(" + cValToChar(nNum1) + ") ^ nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 ^ nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") ^ nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 ^ nNum2))
 	• MODULAÇÃO
-		alert("nNum1(" + cValToChar(nNum1) + ") % nNum2(" + cValToChar(nNum2) + ") | RESULTADO: = " + cValToChar(nNum1 % nNum2))
+		ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") % nNum2(" + CVALTOCHAR(nNum2) + ") | RESULTADO: = " + CVALTOCHAR(nNum1 % nNum2))
 		
 ADVPL07) OPERADORES LÓGICOS E DE INCREMENTO/DECREMENTO PRÉ/POS FIXADO
 	• INCREMENTO PÓS-FIXADO
-		alert("ANTES: nNum1(" + cValToChar(nNum1)+ ") || DEPOIS: 1° nNum1++ (" + cValToChar(nNum1++) + ") | DEPOIS: 2° nNum1 (" + cValToChar(nNum1) + ")")
+		ALERT("ANTES: nNum1(" + CVALTOCHAR(nNum1)+ ") || DEPOIS: 1° nNum1++ (" + CVALTOCHAR(nNum1++) + ") | DEPOIS: 2° nNum1 (" + CVALTOCHAR(nNum1) + ")")
 	• DECREMENTO PÓS-FIXADO
-		alert("ANTES: nNum1(" + cValToChar(nNum1)+ ") || DEPOIS: 1° nNum1-- (" + cValToChar(nNum1--) + ") | DEPOIS: 2° nNum1 (" + cValToChar(nNum1) + ")")
+		ALERT("ANTES: nNum1(" + CVALTOCHAR(nNum1)+ ") || DEPOIS: 1° nNum1-- (" + CVALTOCHAR(nNum1--) + ") | DEPOIS: 2° nNum1 (" + CVALTOCHAR(nNum1) + ")")
 	• INCREMENTO PRÉ-FIXADO
-		alert("ANTES: nNum1(" + cValToChar(nNum1)+ ") || DEPOIS: ++nNum1 (" + cValToChar(++nNum1) + ")")
+		ALERT("ANTES: nNum1(" + CVALTOCHAR(nNum1)+ ") || DEPOIS: ++nNum1 (" + CVALTOCHAR(++nNum1) + ")")
 	• DECREMENTO PRÉ-FIXADO
-		alert("ANTES: nNum1(" + cValToChar(nNum1)+ ") || DEPOIS: --nNum1 (" + cValToChar(--nNum1) + ")")
-	• OPERADOR LÓGICO .AND.
-		if(nNum1 = nNum2 .and. nNum1 = nNum3)
-			alert("nNum1(" + cValToChar(nNum1) + ") == nNum2(" + cValToChar(nNum2) + ") .and. nNum1(" + cValToChar(nNum1) + ") == nNum3(" + cValToChar(nNum3) + ")")
+		ALERT("ANTES: nNum1(" + CVALTOCHAR(nNum1)+ ") || DEPOIS: --nNum1 (" + CVALTOCHAR(--nNum1) + ")")
+	• OPERADOR LÓGICO .AND..
+		IF(nNum1 = nNum2 .AND.. nNum1 = nNum3)
+			ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") == nNum2(" + CVALTOCHAR(nNum2) + ") .AND.. nNum1(" + CVALTOCHAR(nNum1) + ") == nNum3(" + CVALTOCHAR(nNum3) + ")")
 	• OPERADOR LÓGICO .OR.
-		if(nNum1 == nNum2 .or. nNum1 == nNum3)
-			alert("nNum1(" + cValToChar(nNum1) + ") == nNum2(" + cValToChar(nNum2) + ") .or. nNum1(" + cValToChar(nNum1) + ") == nNum3(" + cValToChar(nNum3) + ")")
+		IF(nNum1 == nNum2 .OR. nNum1 == nNum3)
+			ALERT("nNum1(" + CVALTOCHAR(nNum1) + ") == nNum2(" + CVALTOCHAR(nNum2) + ") .OR. nNum1(" + CVALTOCHAR(nNum1) + ") == nNum3(" + CVALTOCHAR(nNum3) + ")")
 	• OPERADOR LÓGICO .NOT.
-		if(!lLogico1 == lLogico2 .and. nNum1 == nNum3)
-			alert("NEGADO: !lLogico1(" + cValToChar(!lLogico1) + ") == lLogico2(" + cValToChar(lLogico2) + ") .and. " + cValToChar(10) + " == " + cValToChar(10))
+		IF(!lLogico1 == lLogico2 .AND.. nNum1 == nNum3)
+			ALERT("NEGADO: !lLogico1(" + CVALTOCHAR(!lLogico1) + ") == lLogico2(" + CVALTOCHAR(lLogico2) + ") .AND.. " + CVALTOCHAR(10) + " == " + CVALTOCHAR(10))
 			
-ADVPL08) 			
+ADVPL08) MANIPULAÇÃO DE VARIÁVEIS
+	• ALLTRIM (RETORNA A VARIÁVEL LIMPA DE ESPAÇOS EM BRANCO DO INÍCIO E FIM)
+		ALERT("[ALLTRIM] ANTES: '" + cNome + cSobrenome + "' || DEPOIS: '" + ALLTRIM(cNome) + cSobrenome + "'" )
+	• AT (RETORNA A POSIÇÃO DA PRIMEIRA EVIDÊNCIA DO CARACTERE INFORMADO)
+		ALERT("[AT] O primeiro caractere 'E' da String: '" + cNomeTodo + "' está na posição " + CVALTOCHAR(AT("e", cNomeTodo)))
+	• RAT (RETORNA A POSIÇÃO DA ÚLTIMA EVIDÊNCIA DO CARACTERE INFORMADO)
+		ALERT("[RAT] O último caractere 'E' da String: '" + cNomeTodo + "' está na posição " + CVALTOCHAR(RAT("e", cNomeTodo)))
+	• LEN (RETORNA O TAMANHO DA VARIÁVEL
+		ALERT("[LEN] A String '" + cNomeTodo + "'" + " tem " + CVALTOCHAR(LEN(cNomeTodo)) + " caracteres")
+	• LOWER (RETORNA A VARIÁVEL EM LETRAS MÍNUSCULAS)
+		ALERT("[LOWER] ANTES: '" + cNomeTodo + "' || DEPOIS: '" + LOWER(cNomeTodo) + "'" )
+	• UPPER (RETORNA A VARIÁVEL EM LETRAS MAIÚSCULAS)
+		ALERT("[UPPER] ANTES: '" + cNomeTodo + "' || DEPOIS: '" + UPPER(cNomeTodo) + "'" )
+	• ABS (RETORNA O VALOR ABSOLUTO DA VARIÁVEL)
+		ALERT("[ABS] ANTES: '" + CVALTOCHAR(nNumero) + "' || DEPOIS: '" + CVALTOCHAR(ABS(nNumero)) + "'" )
+	• INT (RETORNA O VALOR INTEIRO DA VARIÁVEL)
+		ALERT("[INT] ANTES: '" + CVALTOCHAR(nNumero) + "' || DEPOIS: '" + CVALTOCHAR(INT(nNumero)) + "'" )
+	• NOROUND (RETORNA A QUANTIDADE DESEJADA DE NÚMEROS APÓS A VÍRGULA SEM ARREDONDAR)
+		ALERT("[NOROUND] ANTES: '" + CVALTOCHAR(nNumero) + "' || DEPOIS: '" + CVALTOCHAR(NOROUND(nNumero, 0)) + "'" )
+	• ROUND (RETORNA A QUANTIDADE DESEJADA DE NÚMEROS APÓS A VÍRGULA ARREDONDANDO)
+		ALERT("[ROUND] ANTES: '" + CVALTOCHAR(nNumero) + "' || DEPOIS: '" + CVALTOCHAR(ROUND(nNumero, 0)) + "'" )
+	• VALTYPE (RETORNA O TIPO DA VARIÁVEL INFORMADA)
+		ALERT("[VALTYPE] O tipo da variável '" + cNomeTodo + "' é " + VALTYPE(cNome))
+		
+ADVPL09)
+	• LOOP FOR
+		FOR nCont := 1 TO 10 STEP 1
+			ALERT(nCont)
+		NEXT
+	• LOOP WHILE
+		WHILE nCont != 10
+			ALERT(nCont)
+			nCont++
+		ENDDO
+	• LOOP IF
+		IF(MSGYESNO("Você quer brincar na neve?") == .T.)
+			MSGINFO("#BrincandoNaNeve")
+		ENDIF
+	• LOOP IF, ELSE
+		IF(MSGYESNO("Você quer brincar na neve?") == .T.)
+			MSGINFO("#BrincandoNaNeve")
+		ELSE
+			MSGINFO("Ok, entendi que você não quer brincar...")
+		ENDIF
+	• LOOP IF, ELSEIF, ELSE
+		IF(MSGYESNO("Você quer brincar na neve?") == .T.)
+			MSGINFO("#BrincandoNaNeve")
+		ELSEIF(MSGYESNO("Tem certeza que não quer brincar na neve?") == .F.)
+			MSGINFO("#BrincandoNaNeve")
+		ELSE
+			MSGINFO("Ok, entendi que você não quer brincar...")
+		ENDIF
+	• LOOP DO CASE
+		lConfirma := MSGYESNO("Você quer brincar na neve?")
+		DO CASE
+			CASE lConfirma == .T.
+			MSGINFO("#BrincandoNaNeve")
+			CASE lConfirma == .F.
+			MSGINFO("Ok, entendi que você não quer brincar...")
+			OTHERWISE
+			MSGINFO("Opção Inválida!")
+		ENDCASE
